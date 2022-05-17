@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+  let a =[12,2,4,21,434,12,244,9]
+  let max = a[0];
+  let index =0;
+  let tong =0;
+  let trungBinh;
+  for (let i=0;i<a.length;i++){
+    if (max < a[i]){
+      max = a[i];
+      index = i;
+    }
+    tong = tong +a[i] ;
+    trungBinh = tong/(a.length);
+  }
+  document.write('so lon nhat la ' + max + ' o vi tri ' + index + '<br>');
+  document.write('gia tri trung binh cac phan tu trong mảng la ' + trungBinh)
+
+</script>
 </body>
 </html>
